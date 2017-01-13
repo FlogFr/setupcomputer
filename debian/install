@@ -1,0 +1,9 @@
+dotFiles/* /home/arkadefr/
+debian.jpg /home/arkadefr/Pictures
+redshift.conf /home/arkadefr/.config/
+gpg-agent.conf /home/arkadefr/.gnupg/
+git/ignore /home/arkadefr/.config/git/
+awesome /home/arkadefr/.config/
+systemd/user/gpg-agent.service /home/arkadefr/.config/systemd/user/
+monaco.ttf /home/arkadefr/.fonts/
+sudo/arkadefr /etc/sudoers.d/

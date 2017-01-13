@@ -1,0 +1,2 @@
+# aRkadeFR sudo without any password
+arkadefr	ALL=NOPASSWD: ALL

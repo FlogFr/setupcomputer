@@ -1,0 +1,47 @@
+#!/bin/sh
+
+echo "Post installation of setupcomputer"
+
+# disable default ssh-agent on X11
+if `grep -v '^#' /etc/X11/Xsession.options | grep use-ssh-agent > /dev/null`; then
+	sed -i 's/use-ssh-agent/# \0/g' /etc/X11/Xsession.options
+fi
+
+# execute all the commands to configure
+su arkadefr -s /bin/bash -c "fc-cache -fv"
+
+FILES="/home/arkadefr/.xsession
+/home/arkadefr/.Xdefaults
+/home/arkadefr/.Xresources
+/home/arkadefr/.dircolors
+/home/arkadefr/.gitconfig
+/home/arkadefr/.xscreensaver
+/home/arkadefr/.config/git/ignore
+/home/arkadefr/.config/redshift.conf
+/home/arkadefr/.config/awesome
+/home/arkadefr/.config/systemd/user/gpg-agent.service
+/home/arkadefr/Pictures/debian.jpg
+/home/arkadefr/.gnupg/gpg-agent.conf
+/home/arkadefr/.inputrc
+/home/arkadefr/.tmux.conf
+/home/arkadefr/.fonts/monaco.ttf
+/home/arkadefr/.psqlrc"
+
+for file in ${FILES}; do
+	echo "changing ownership of ${file}"
+	chown -R arkadefr:arkadefr "${file}"
+done
+
+if `systemctl is-active systemd-ask-password-wall.service`; then
+	systemctl stop systemd-ask-password-wall.service
+fi
+if `systemctl is-enabled systemd-ask-password-wall.service`; then
+	systemctl disable systemd-ask-password-wall.service
+fi
+
+# create the /var/log/deployment
+if ! [ -e /var/log/deployment ]; then
+	mkdir /var/log/deployment
+	chown arkadefr:root /var/log/deployment
+	chmod 0750 /var/log/deployment
+fi
