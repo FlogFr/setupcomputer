@@ -1,0 +1,9 @@
+[Unit]
+Description=RED Shift screen
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/redshift
+
+[Install]
+WantedBy=xdm.target
