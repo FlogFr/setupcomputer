@@ -1,5 +1,6 @@
 setupcomputer (1.0-1) stable; urgency=low
 
   * Initial release.
+  * Install necessary packages on computer, with the related configuration
 
  -- arkadefr <arkadefr@lenodoc>  Sat, 07 Jan 2017 13:01:50 +0100

@@ -1,8 +1,8 @@
-#!/bin/sh
+#!/bin/sh -e
 
 echo "Post installation of setupcomputer"
 
-# disable default ssh-agent on X11
+# default ssh-agent on X11
 if `grep -v '^#' /etc/X11/Xsession.options | grep use-ssh-agent > /dev/null`; then
 	sed -i 's/use-ssh-agent/# \0/g' /etc/X11/Xsession.options
 fi
@@ -18,7 +18,6 @@ FILES="/home/arkadefr/.xsession
 /home/arkadefr/.xscreensaver
 /home/arkadefr/.config/git/ignore
 /home/arkadefr/.config/redshift.conf
-/home/arkadefr/.config/awesome
 /home/arkadefr/.config/systemd/user/gpg-agent.service
 /home/arkadefr/Pictures/debian.jpg
 /home/arkadefr/.gnupg/gpg-agent.conf

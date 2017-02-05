@@ -17,4 +17,4 @@ Building the package
 Install the package
 ===================
 
-- `sudo dpkg -i ../setupcomputer_*.deb`
+- `sudo dpkg -i ../setupcomputer_$(dpkg-parsechangelog --show-field Version)_amd64.deb`

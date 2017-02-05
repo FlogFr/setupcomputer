@@ -7,11 +7,14 @@ Build-Depends: debhelper (>= 9)
 
 Package: setupcomputer
 Architecture: any
-Depends: ${misc:Depends}, less (>= 481-2.1), vim-nox (>= 2:8.0.0134-1),
-  git (>= 2.11.0), gnupg2 (>= 2.1.17), gnupg-agent (>= 2.1.17),
-  awesome (>= 3.5.9), curl (>= 7.51.0), tmux (>= 2.3-4), openvpn (>= 2.3),
+Depends: ${misc:Depends},
+  vim-nox (>= 2:8.0.0134-1), less (>= 481-2.1), git (>= 2.11.0),
+  gnupg2 (>= 2.1.17), gnupg-agent (>= 2.1.17), awesome (>= 4.0),
+  curl (>= 7.51.0), tmux (>= 2.3-4), openvpn (>= 2.3),
   keepassx (>= 2.0.2), redshift (>= 1.11), xscreensaver (>= 5.36),
   rxvt-unicode-256color (>= 9.22), sudo (>= 1.8.19), arandr (>= 0.1.9),
-  zathura (>= 0.3.6), nfs-common (>= 1.3.4), exuberant-ctags (>= 5.9)
+  zathura (>= 0.3.6), nfs-common (>= 1.3.4), exuberant-ctags (>= 5.9),
+  wireshark (>= 2.2.3+g57531cd-1), texlive (>= 2016.20161130-1),
+  python3-flask (>= 0.12-1)
 Description: Setup Computer is a package to quickly setup all my dot files and computer on a debian stretch
   This contains the dependency of lots of package, and configure them.
