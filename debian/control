@@ -9,7 +9,7 @@ Package: setupcomputer
 Architecture: any
 Depends: ${misc:Depends},
   vim-nox (>= 2:8.0.0134-1), less (>= 481-2.1), git (>= 2.11.0),
-  gnupg2 (>= 2.1.17), gnupg-agent (>= 2.1.17), awesome (>= 4.0),
+  gnupg2 (>= 2.1.18-3), gnupg-agent (>= 2.1.18-3), awesome (>= 4.0),
   curl (>= 7.51.0), tmux (>= 2.3-4), openvpn (>= 2.3),
   keepassx (>= 2.0.2), redshift (>= 1.11), xscreensaver (>= 5.36),
   rxvt-unicode-256color (>= 9.22), sudo (>= 1.8.19), arandr (>= 0.1.9),
