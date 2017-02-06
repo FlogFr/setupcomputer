@@ -15,7 +15,6 @@ awesome/rc.lua /etc/xdg/awesome/
 awesome/theme.lua /usr/share/awesome/themes/default/
 awesome/background.png /usr/share/awesome/themes/default/
 systemd/user/redshift.service /home/arkadefr/.config/systemd/user/
-systemd/user/gpg-agent.service /home/arkadefr/.config/systemd/user/
 redshift.conf /home/arkadefr/.config/
 monaco.ttf /home/arkadefr/.fonts/
 sudo/arkadefr /etc/sudoers.d/

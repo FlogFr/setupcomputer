@@ -3,3 +3,4 @@ debian/setupcomputer.debhelper.log
 debian/setupcomputer.substvars
 DEBIAN/*
 debian/debhelper-build-stamp
+debian/files
