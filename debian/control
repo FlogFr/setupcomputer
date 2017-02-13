@@ -8,6 +8,7 @@ Build-Depends: debhelper (>= 9)
 Package: setupcomputer
 Architecture: any
 Depends: ${misc:Depends},
+  aptitude, aptitude-doc-en,
   vim-nox (>= 2:8.0.0134-1), less (>= 481-2.1), git (>= 2.11.0),
   gnupg2 (>= 2.1.18-3), gnupg-agent (>= 2.1.18-3), awesome (>= 4.0),
   curl (>= 7.51.0), tmux (>= 2.3-4), openvpn (>= 2.3),

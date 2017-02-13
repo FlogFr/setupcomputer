@@ -12,7 +12,6 @@ su arkadefr -s /bin/bash -c "fc-cache -fv"
 
 FILES="/home/arkadefr/.xsession
 /home/arkadefr/.Xdefaults
-/home/arkadefr/.Xresources
 /home/arkadefr/.dircolors
 /home/arkadefr/.gitconfig
 /home/arkadefr/.xscreensaver
