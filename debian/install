@@ -15,6 +15,7 @@ dotFiles/.xscreensaver /home/arkadefr/
 dotFiles/.xsession /home/arkadefr/
 
 root/.inputrc /root/
+root/.bashrc /root/
 
 gpg-agent.conf /home/arkadefr/.gnupg/
 git/ignore /home/arkadefr/.config/git/
