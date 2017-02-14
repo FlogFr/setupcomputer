@@ -58,7 +58,7 @@ URxvt*background:              [100]#002b36
 *color15:                 #fdf6e3
 
 ! xdpyinfo | grep resolution
-Xft.dpi:        176
+Xft.dpi:        234
 Xft.antialias:  true
 Xft.hinting:    true
 Xft.rgba:       rgb

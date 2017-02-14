@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+dpkg-divert --remove /etc/xdg/awesome/rc.lua
+dpkg-divert --remove /usr/share/awesome/themes/default/theme.lua
+dpkg-divert --remove /usr/share/awesome/themes/default/background.png
