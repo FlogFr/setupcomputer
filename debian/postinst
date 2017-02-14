@@ -8,33 +8,23 @@ if `grep -v '^#' /etc/X11/Xsession.options | grep use-ssh-agent > /dev/null`; th
 fi
 
 # execute all the commands to configure
-su arkadefr -s /bin/bash -c "fc-cache -fv"
+su arkadefr -s /bin/bash -c "fc-cache -fv" >/dev/null
 
-FILES="/home/arkadefr/.xsession
-/home/arkadefr/.Xdefaults
-/home/arkadefr/.dircolors
-/home/arkadefr/.gitconfig
-/home/arkadefr/.xscreensaver
-/home/arkadefr/.config/git/ignore
-/home/arkadefr/.config/redshift.conf
-/home/arkadefr/Pictures/debian.jpg
-/home/arkadefr/.gnupg/gpg-agent.conf
-/home/arkadefr/.inputrc
-/home/arkadefr/.tmux.conf
-/home/arkadefr/.fonts/monaco.ttf
-/home/arkadefr/.psqlrc"
+echo "changing ownership of /home/arkadefr/.* files"
+chown -R arkadefr:arkadefr /home/arkadefr/.*
 
-for file in ${FILES}; do
-	echo "changing ownership of ${file}"
-	chown -R arkadefr:arkadefr "${file}"
-done
-
-if `systemctl is-active systemd-ask-password-wall.service`; then
+set +e
+systemctl is-active systemd-ask-password-wall.service >/dev/null
+wall_service_is_active_rc="$?"
+if [ "$wall_service_is_active_rc" -eq "0" ]; then
 	systemctl stop systemd-ask-password-wall.service
 fi
-if `systemctl is-enabled systemd-ask-password-wall.service`; then
+systemctl is-enabled systemd-ask-password-wall.service >/dev/null
+wall_service_is_enabled_rc="$?"
+if [ "$wall_service_is_enabled_rc" -eq "0" ]; then
 	systemctl disable systemd-ask-password-wall.service
 fi
+set -e
 
 # create the /var/log/deployment
 if ! [ -e /var/log/deployment ]; then

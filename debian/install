@@ -1,18 +1,26 @@
+dotFiles/.bash_aliases /home/arkadefr/
+dotFiles/.bash_function /home/arkadefr/
+dotFiles/.bash_profile /home/arkadefr/
+dotFiles/.bashrc /home/arkadefr/
+dotFiles/.bash_variables /home/arkadefr/
 dotFiles/.dircolors /home/arkadefr/
 dotFiles/.gitconfig /home/arkadefr/
 dotFiles/.inputrc /home/arkadefr/
 dotFiles/.psqlrc /home/arkadefr/
+dotFiles/.shell_options /home/arkadefr/
 dotFiles/.tmux.conf /home/arkadefr/
 dotFiles/.Xdefaults /home/arkadefr/
+dotFiles/.Xresources /home/arkadefr/
 dotFiles/.xscreensaver /home/arkadefr/
 dotFiles/.xsession /home/arkadefr/
 
-debian.jpg /home/arkadefr/Pictures
+root/.inputrc /root/
+
 gpg-agent.conf /home/arkadefr/.gnupg/
 git/ignore /home/arkadefr/.config/git/
 awesome/rc.lua /etc/xdg/awesome/
 awesome/theme.lua /usr/share/awesome/themes/default/
-awesome/background.png /usr/share/awesome/themes/default/
+awesome/background.jpg /usr/share/awesome/themes/default/
 systemd/user/redshift.service /home/arkadefr/.config/systemd/user/
 redshift.conf /home/arkadefr/.config/
 monaco.ttf /home/arkadefr/.fonts/

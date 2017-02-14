@@ -1,5 +1,4 @@
 #!/bin/sh -e
 
-dpkg-divert --package awesome --add --rename --divert /etc/xdg/awesome/rc.lua.real /etc/xdg/awesome/rc.lua
-dpkg-divert --package awesome --add --rename --divert /usr/share/awesome/themes/default/theme.lua.real /usr/share/awesome/themes/default/theme.lua
-dpkg-divert --package awesome --add --rename --divert /usr/share/awesome/themes/default/background.png.real /usr/share/awesome/themes/default/background.png
+dpkg-divert --package setupcomputer --add --rename --divert /etc/xdg/awesome/rc.lua.real /etc/xdg/awesome/rc.lua
+dpkg-divert --package setupcomputer --add --rename --divert /usr/share/awesome/themes/default/theme.lua.real /usr/share/awesome/themes/default/theme.lua

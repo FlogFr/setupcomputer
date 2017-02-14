@@ -1,0 +1,33 @@
+# environment of bash
+export EDITOR=vim
+export PAGER=less
+# export LESS="-r" # fix the git lola
+
+export MANWIDTH=80
+
+export EDITOR='vim'
+
+unset SSH_AGENT_PID
+if [ "${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+  export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+fi
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+export HISTCONTROL=ignoredups:erasedups
+export HISTSIZE=200000
+export HISTFILESIZE=200000
+
+export GEM_PATH="~/gems"
+
+# python
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
+# source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/.virtualenvs
+export PYTHONDONTWRITEBYTECODE=y
+
+# npm
+export PATH="${PATH}:${HOME}/npm/bin"
+export NPM_PACKAGES="${HOME}/.npm-packages"
+
+# peopleask
+export PEOPLEASK_ANSIBLE_LOG_DIR="/var/log/deployment"
