@@ -17,7 +17,6 @@ FILES="/home/arkadefr/.xsession
 /home/arkadefr/.xscreensaver
 /home/arkadefr/.config/git/ignore
 /home/arkadefr/.config/redshift.conf
-/home/arkadefr/.config/systemd/user/gpg-agent.service
 /home/arkadefr/Pictures/debian.jpg
 /home/arkadefr/.gnupg/gpg-agent.conf
 /home/arkadefr/.inputrc
