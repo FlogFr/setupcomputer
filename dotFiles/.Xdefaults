@@ -22,7 +22,7 @@ URxvt.keysym.Home: \033[1~
 URxvt.keysym.End: \033[4~
 
 URxvt.perl-ext-common: default,matcher
-URxvt.url-launcher: /usr/bin/firefox
+URxvt.url-launcher: /etc/alternatives/x-www-browser
 URxvt.matcher.button: 1
 
 ! Solarized color scheme for the X Window System
