@@ -8,3 +8,9 @@ set keymap vi-insert
 "\C-l": clear-screen
 "\C-w": backward-kill-word 
 "\C-x\C-r": re-read-init-file
+set colored-stats On
+set completion-prefix-display-length 3
+set mark-symlinked-directories On
+set show-all-if-ambiguous On
+set show-all-if-unmodified On
+set visible-stats On
