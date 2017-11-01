@@ -16,6 +16,6 @@ Depends: ${misc:Depends},
   rxvt-unicode-256color (>= 9.22), sudo (>= 1.8.19), arandr (>= 0.1.9),
   zathura (>= 0.3.6), nfs-common (>= 1.3.4), exuberant-ctags (>= 5.9),
   wireshark (>= 2.2.3+g57531cd-1), texlive (>= 2016.20161130-1),
-  python3-flask (>= 0.12-1)
+  python3-flask (>= 0.12-1), tree (>= 1.7.0-5)
 Description: Setup Computer is a package to quickly setup all my dot files and computer on a debian stretch
   This contains the dependency of lots of package, and configure them.
