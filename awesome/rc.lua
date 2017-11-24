@@ -476,6 +476,7 @@ awful.rules.rules = {
           "Zathura",
           "Thunar",
           "Shotwell",
+          "Virt-manager",
           "zoom",
         },
 
